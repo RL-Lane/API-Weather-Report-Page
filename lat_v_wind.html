@@ -35,39 +35,31 @@
         <!--end of Navigation bar-->
 
 
-        <h1 class="text-info text-center">Latitude vs. Temp</h1>
+        <h1 class="text-info text-center">Latitude vs. wind</h1>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                 
                     <h2 class="text-danger text-center">Entire Planet</h2>
-                    <a href="assets/images/lat_v_temp.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/lat_v_temp.png"></a>
-                    <p>This shows a clear trend of temperatures corresponding with latitude, 
-                        with a peak just a bit north of the equator.</p>
-                    <p>Although there are other regression algorithms which would likely 
-                        fit better, for this analysis, only linear regression is considered.</p>
+                    <a href="assets/images/lat_v_wind.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/lat_v_wind.png"></a>
+                    <p>As with cloudiness, wind speed distribution does not seem to correlate storngly with latitude.</p>
+                    <p></p>
                     
                 </div>
                 <div class="col-lg-4">
                 
                     <h2 class="text-danger text-center">North Only</h2>
-                    <a href="assets/images/north_lat_v_temp.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/north_lat_v_temp.png"></a>
-                    <p>As shown in this chart, there is a clear correlation between latitude and temperature.</p>
-                    <p>In order to reduce fluctuations between night and day (since the query
-                         would have run at a single time, but checked temperatures globally), 
-                         only daily maximum temperatures are used.</p>
+                    <a href="assets/images/north_lat_v_wind.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/north_lat_v_wind.png"></a>
+                    <p>When breaking this chart into hemispheres, a very weak trend does seem to appear.</p>
+                    <p></p>
                     
                 </div>
                 <div class="col-lg-4">
                 
                     <h2 class="text-danger text-center">South Only</h2>
-                    <a href="assets/images/south_lat_v_temp.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/south_lat_v_temp.png"></a>
-                    <p>As seen in the northern hemisphere, there is a strong correlation between latitude and temperature.</p>
-                    <p>Note that there are far fewer points to choose from.  
-                        Although the randomly-seeded coordinates would be evenly distributed, 
-                        any time there is a repeated city name (found via closest coordinate), 
-                        the new location is discarded from the set.  There is much less landmass 
-                        south of the equator than north, so this is working as intended.</p>
+                    <a href="assets/images/south_lat_v_wind.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/south_lat_v_wind.png"></a>
+                    <p>It appears that the highest wind speeds seem to occur farther away from the equator.</p>
+                    <p>Still, the vast majority of wind speeds seem to be fairly docile at less than 10 miles per hour.</p>
                     
                 </div>
 

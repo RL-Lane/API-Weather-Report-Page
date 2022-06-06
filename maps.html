@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Python Weather Analysis</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://getfirefox.com">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("navbar.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+
+
+        <h1 class="text-info text-center">Mapped Results</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                
+                    <h2 class="text-danger text-center">Humidity Map</h2>
+                    <a href="assets/images/humidity_map.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/humidity_map.png"></a>
+                    <p>This map shows a heatmap of humidity for all cities within the dataset.</p>
+                    <p>Two cities near each other can contribute just as much to the heatmap as having higher humidity
+                        with fewer cities.  One way to defeat this problem would be to evenly space points, but weather 
+                        data may be more commonly recorded in cities large enough to have weather stations.
+                    </p>
+                    
+                </div>
+                <div class="col-lg-4">
+                
+                    <h2 class="text-danger text-center">Top Cities for Good Weather</h2>
+                    <a href="assets/images/hotels.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/hotels.png"></a>
+                    <p>Here, top cities are selected which meet the following criteria:
+                        <ul>
+                            <li>Max temp between 70°F and 80°F</li>
+                            <li>Wind speed under 10 mph</li>
+                            <li>Cloudless skies</li>
+                        </ul>
+                    </p>
+                    <p>Keep in mind that this is only pertaining to the date and time that the query was run for the project
+                        <a href="https://github.com/RL-Lane/python-api-challenge">python-api-challenge</a>: 30 April, 2022, 2:38 AM CDT.
+                    </p>
+                    
+                </div>
+                <div class="col-lg-4">
+                
+                    <h2 class="text-danger text-center">Top Pick</h2>
+                    <a href="assets/images/hotels2.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/hotels2.png"></a>
+                    <p>Of the 14 cities which matched the previous criteria, 3 of them landed in the tiny island nation of Mauritius.</p>
+                    <p>This was an island I had not heard of.  It seems to have a good blend of weather along with citizens
+                        who have a fairly good quality of life and fair income.  This nation will most certainly be on my mind
+                        if I can afford to travel.
+                    </p>
+                    
+                </div>
+
+                
+                        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

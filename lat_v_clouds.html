@@ -35,39 +35,37 @@
         <!--end of Navigation bar-->
 
 
-        <h1 class="text-info text-center">Latitude vs. Temp</h1>
+        <h1 class="text-info text-center">Latitude vs. Clouds</h1>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                 
                     <h2 class="text-danger text-center">Entire Planet</h2>
-                    <a href="assets/images/lat_v_temp.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/lat_v_temp.png"></a>
-                    <p>This shows a clear trend of temperatures corresponding with latitude, 
-                        with a peak just a bit north of the equator.</p>
-                    <p>Although there are other regression algorithms which would likely 
-                        fit better, for this analysis, only linear regression is considered.</p>
+                    <a href="assets/images/lat_v_cloud.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/lat_v_cloud.png"></a>
+                    <p>There seems to be little correlations between latitude and clouds.</p>
+                    <p>It's at least interesting to see that cloudiness seems to be binned according to percentages.
+                        This likely indicates that cloudiness is sometimes recorded as a human estimate, rather than calculation
+                        of area. </p>
                     
                 </div>
                 <div class="col-lg-4">
                 
                     <h2 class="text-danger text-center">North Only</h2>
-                    <a href="assets/images/north_lat_v_temp.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/north_lat_v_temp.png"></a>
-                    <p>As shown in this chart, there is a clear correlation between latitude and temperature.</p>
-                    <p>In order to reduce fluctuations between night and day (since the query
-                         would have run at a single time, but checked temperatures globally), 
-                         only daily maximum temperatures are used.</p>
+                    <a href="assets/images/north_lat_v_cloud.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/north_lat_v_cloud.png"></a>
+                    <p>While breaking the linear regression into hemispheres, it seems that there is still no
+                        correlation to be found.
+                    </p>
+                    <p> Also note the high prevalence of 100% cloudiness.  This is likely because the measure of cloudiness
+                        here is area of coverage, but that would include very light clouds all the way to dangerous thunderstorms.
+                    </p>
                     
                 </div>
                 <div class="col-lg-4">
                 
                     <h2 class="text-danger text-center">South Only</h2>
-                    <a href="assets/images/south_lat_v_temp.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/south_lat_v_temp.png"></a>
-                    <p>As seen in the northern hemisphere, there is a strong correlation between latitude and temperature.</p>
-                    <p>Note that there are far fewer points to choose from.  
-                        Although the randomly-seeded coordinates would be evenly distributed, 
-                        any time there is a repeated city name (found via closest coordinate), 
-                        the new location is discarded from the set.  There is much less landmass 
-                        south of the equator than north, so this is working as intended.</p>
+                    <a href="assets/images/south_lat_v_cloud.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/south_lat_v_cloud.png"></a>
+                    <p>As seen in the northern hemisphere, there is no correlation found between latitude and cloudiness.</p>
+                    <p></p>
                     
                 </div>
 

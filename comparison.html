@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Python Weather Analysis</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://getfirefox.com">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("navbar.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+
+
+        <h1 class="text-info text-center">Comparison: Latitude vs. X</h1>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <h2 class="text-danger text-center">Clouds (%)</h2>
+                    <a href="assets/images/lat_v_cloud.png" target="_blank"><img class="float-start px-3" width="90%" src="assets/images/lat_v_cloud.png"></a>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="text-danger text-center">Humidity (%)</h2>
+                    <a href="assets/images/lat_v_hum.png" target="_blank"><img class="float-start px-3" width="90%" src="assets/images/lat_v_hum.png"></a>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="text-danger text-center">Temperature (°F)</h2>
+                    <a href="assets/images/lat_v_temp.png" target="_blank"><img class="float-start px-3" width="90%" src="assets/images/lat_v_temp.png"></a>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="text-danger text-center">Wind Speed (mph)</h2>
+                    <a href="assets/images/lat_v_wind.png" target="_blank"><img class="float-start px-3" width="90%" src="assets/images/lat_v_wind.png"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
